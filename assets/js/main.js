@@ -58,7 +58,7 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__data, .home__img,
             .sneaker, .collection__card,
-            .offer__container, .new__mens,
+            .offer__container, .footer__box, .new__mens,
             .new__sneaker-card`, {
     interval: 200
 })
