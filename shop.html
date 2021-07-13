@@ -1,183 +1,364 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<!-- === CSS === -->
-       <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- === BOX ICONS === -->
-       <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    
+    <!-- === CSS === -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- === BOX ICONS === -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <title>Benwits Fashion Store | Website</title>
+  </head>
 
-</head>
-<body>
-    
-<!-- === HEADER === -->
-<header class="l-header" id="header">
-    <nav class="nav bd-grid">
+  <body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <!--========== SOCIAL MEDIA SIDEBAR ==========-->
+    <div class="float-sm">
+      <div class="fl-fl float_ig">
+        <i class="bx bxl-instagram bx-icon"></i>
+        <a href="#">Follow Us!</a>
+      </div>
+
+      <div class="fl-fl float_tw">
+        <i class="bx bxl-twitter bx-icon"></i>
+        <a href="#">Follow Us!</a>
+      </div>
+      <div class="fl-fl float_sc">
+        <i class="bx bxl-snapchat bx-icon"></i>
+        <a href="#">Follow Us!</a>
+      </div>
+
+      <div class="fl-fl float_fb">
+        <i class="bx bxl-facebook bx-icon"></i>
+        <a href="#">Follow Us!</a>
+      </div>
+    </div>
+
+    <!-- === HEADER === -->
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid">
         <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bxs-grid' ></i>
+          <i class="bx bxs-grid"></i>
         </div>
 
-        <a href="#" class="nav__logo">Benwits</a>
+        <a href="index.html" class="nav__logo">Benwits</a>
 
         <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="./index.html" class="nav__link active">Home</a></li>
-                <li class="nav__item"><a href="./index.html" class="nav__link">Featured</a></li>
-                <li class="nav__item"><a href="./index.html" class="nav__link">Women</a></li>
-                <li class="nav__item"><a href="./index.html" class="nav__link">New</a></li>
-                <li class="nav__item"><a href="#shop" class="nav__link active">shop</a></li>
-            </ul>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="/index.html#featured" class="nav__link">T-Shirts</a>
+            </li>
+            <li class="nav__item">
+              <a href="/index.html#women" class="nav__link">Hats</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="./shop.html" class="nav__link active">shop</a>
+            </li>
+          </ul>
         </div>
 
         <div class="nav__shop">
-            <i class='bx bx-moon change-theme' id="theme-button"></i>
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-        <main class="l-main">
-            <section class="featured section" id="Shop">
-                <h2 class="section-title">Our Products</h2>
-            
-                <div class="featured__container bd-grid">
-                    <article class="sneaker">
-                        <img src="assets/img/featured1.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$99.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
-            
-                    <article class="sneaker">
-                        <img src="assets/img/featured2.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$199.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
-            
-                    <article class="sneaker">
-                        <img src="assets/img/featured3.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$299.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
+    <main class="l-main"></main>
 
-                    <article class="sneaker">
-                        <img src="assets/img/new2.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$149.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
+    <!-- === Featured === -->
+    <section class="featured section" id="featured">
+      <h2 class="section-title">Our Products</h2>
 
-                    <article class="sneaker">
-                        <img src="assets/img/new3.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$149.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
+      <div class="featured__container bd-grid">
+        <article class="sneaker">
+          <!--  <div class="sneaker__sale">Sale</div>-->
+          <img src="assets/img/lvt_b.png" alt="" class="sneaker__img" />
+          <span class="sneaker__name">Lagos Vibes Tee</span>
+          <span class="sneaker__price">N6,000 / £15.00</span>
+          <span class="tee__sub">Available in Black, White & Yellow</span>
+          <a href="#contact" class="button-light"
+            >Buy Now! <i class="bx bx-right-arrow-alt button-icon"></i
+          ></a>
+        </article>
 
-                    <article class="sneaker">
-                        <img src="assets/img/new4.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$149.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
+        <article class="sneaker">
+          <!-- <div class="sneaker__sale">Sale</div>-->
+          <img src="assets/img/yeshua_b.png" alt="" class="sneaker__img" />
+          <span class="sneaker__name">Yeshua Tee</span>
+          <span class="sneaker__price">N6,000 / £15.00</span>
+          <span class="tee__sub">Available in Black, White & Yellow</span>
+          <a href="#contact" class="button-light"
+            >Buy Now! <i class="bx bx-right-arrow-alt button-icon"></i
+          ></a>
+        </article>
 
-                    <article class="sneaker">
-                        <img src="assets/img/new5.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$149.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
+        <article class="sneaker">
+          <!-- <div class="sneaker__sale">Sale</div>-->
+          <img src="assets/img/floraltee.png" alt="" class="sneaker__img" />
+          <span class="sneaker__name">Benwits Floral Tee</span>
+          <span class="sneaker__price">N6,000 / £15.00</span>
+          <span class="tee__sub">Available in Black, White & Yellow</span>
+          <a href="#contact" class="button-light"
+            >Buy Now! <i class="bx bx-right-arrow-alt button-icon"></i
+          ></a>
+        </article>
 
-                    <article class="sneaker">
-                        <img src="assets/img/women1.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$149.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
+        <article class="sneaker">
+          <!-- <div class="sneaker__sale">Sale</div>-->
+          <img src="assets/img/jctee.png" alt="" class="sneaker__img" />
+          <span class="sneaker__name">JC Tee</span>
+          <span class="sneaker__price">N6,000 / £15.00</span>
+          <span class="tee__sub">Available in Black, White & Yellow</span>
+          <a href="#contact" class="button-light"
+            >Buy Now! <i class="bx bx-right-arrow-alt button-icon"></i
+          ></a>
+        </article>
 
-                    <article class="sneaker">
-                        <img src="assets/img/women2.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$149.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
+        <article class="sneaker">
+          <!--  <div class="sneaker__sale">Sale</div>-->
+          <img src="assets/img/bhat.png" alt="" class="sneaker__img" />
+          <span class="sneaker__name">JC Bucket Hat</span>
+          <span class="sneaker__price">N6,000 / £15.00</span>
+          <span class="tee__sub">Available in Black & White </span>
+          <a href="#contact" class="button-light"
+            >Buy Now! <i class="bx bx-right-arrow-alt button-icon"></i
+          ></a>
+        </article>
 
-                    <article class="sneaker">
-                        <img src="assets/img/women3.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$149.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
+        <article class="sneaker">
+          <!-- <div class="sneaker__sale">Sale</div>-->
+          <img src="assets/img/hoodie.png" alt="" class="sneaker__img" />
+          <span class="sneaker__name">Benwits Hoodie</span>
+          <span class="sneaker__price">N6,000 / £15.00</span>
+          <span class="tee__sub">Available in Black & White</span>
+          <a href="#contact" class="button-light"
+            >Buy Now! <i class="bx bx-right-arrow-alt button-icon"></i
+          ></a>
+        </article>
 
-                    <article class="sneaker">
-                        <img src="assets/img/women4.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Lorem Ipsum</span>
-                        <span class="sneaker__price">$149.99</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
-                    </article>
-                </div>
+        <!--    <article class="sneaker">
+          <div class="sneaker__sale">Sale</div>
+          <img src="assets/img/tshirt_c.png" alt="" class="sneaker__img" />
+          <span class="sneaker__name">Yeshua Tee</span>
+          <span class="sneaker__price">N6,000 / £15.00</span>
+          <a href="#" class="button-light"
+            >Buy Now! <i class="bx bx-right-arrow-alt button-icon"></i
+          ></a>
+        </article> -->
+      </div>
 
-                <div class="sneaker__pages bd-grid">
-                    <div>
-                        <span class="sneaker_pag">1</span>
-                        <span class="sneaker_pag">2</span>
-                        <span class="sneaker_pag">3</span>
-                        <span class="sneaker_pag">4</span>
-                        <span class="sneaker_pag">&#8594;</span>
-                    </div>
-                </div>
-            </section>
-        </main>
+      <div class="sneaker__pages bd-grid">
+        <div>
+          <span class="sneaker_pag">1</span>
+          <span class="sneaker_pag">2</span>
+          <span class="sneaker_pag">3</span>
+          <span class="sneaker_pag">4</span>
+          <span class="sneaker_pag">&#8594;</span>
+        </div>
+      </div>
+    </section>
 
-<!-- === FOOTER === -->
-<footer class="footer section">
-    <div class="footer__container bd-grid">
+    <!-- === Contact Form === -->
+    <section class="form__container section" id="contact">
+      <span class="big-circle"></span>
+      <span class="big-circle-b"></span>
+      <!--<img src="/assets/img/b-g.jpg" class="square" alt="" />-->
+      <div class="main__form">
+        <div class="contact-info">
+          <h3 class="title">A little about us...</h3>
+          <p class="text">
+            BENWITS is a fast-rising Nigerian owned fashion line aimed at
+            achieving brand positioning for individuals and organizations by
+            creating unique local and foreign fashion designs for their
+            outlooks.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <i class="bx bx-map icon"></i>
+              <p>20 Lorem ipsum dolor sit amet. LG, NG.</p>
+            </div>
+
+            <div class="information">
+              <i class="bx bx-envelope icon"></i>
+              <p>johndoe@benwits.com</p>
+            </div>
+
+            <div class="information">
+              <i class="bx bx-phone-call icon"></i>
+              <p>(000) 000-000-0000</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="bx bxl-snapchat"></i>
+              </a>
+              <a href="#">
+                <i class="bx bxl-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form
+            action="https://formsubmit.co/mayowaodebode@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Benwits: New Order / Submission!"
+            />
+
+            <input type="hidden" name="_next" value="#" />
+
+            <h3 class="title">Contact Us</h3>
+            <div class="input-container">
+              <input
+                type="text"
+                name="fullname"
+                class="input"
+                autocomplete="on"
+              />
+              <label for="">Full Name</label>
+              <span>Full Name</span>
+            </div>
+
+            <div class="input-container">
+              <input
+                type="email"
+                name="email"
+                class="input"
+                autocomplete="on"
+                required
+              />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+
+            <div class="input-container">
+              <input
+                type="tel"
+                name="phone"
+                class="input"
+                autocomplete="on"
+                required
+              />
+              <label for="">Mobile Number</label>
+              <span>Mobile Number</span>
+            </div>
+
+            <div class="input-container">
+              <select name="product" class="input">
+                <option value="yeshuatees_s" class="dropdown">_</option>
+                <option value="yeshuatees_s" class="dropdown">
+                  Yeshua Tees - Small
+                </option>
+                <option value="yeshuatees_m" class="dropdown">
+                  Yeshua Tees - Medium
+                </option>
+                <option value="yeshuatees_l" class="dropdown">
+                  Yeshua Tees - Large
+                </option>
+              </select>
+              <label for="">Select Product To Buy</label>
+              <span>Select Product To Buy</span>
+            </div>
+
+            <div class="input-container textarea">
+              <textarea
+                name="message"
+                class="input"
+                autocomplete="on"
+              ></textarea>
+              <label for="">Message</label>
+              <span>Mobile Number</span>
+            </div>
+
+            <input type="submit" value="SEND" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Footer === -->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
         <div class="footer__box">
-            <h3 class="footer__title">Benwits</h3>
-            <p class="footer__description">Lorem ipsum dolor sit amet 2021.</p>
+          <h3 class="footer__title">Benwits</h3>
+          <p class="footer__description">
+            Our customers are the reason we work as hard and as consistently as
+            we.
+          </p>
         </div>
 
         <div class="footer__box">
-            <h3 class="footer__title">Discover</h3>
-            <ul>
-                <li><a href="#home" class="footer__link">Home</a></li>
-                <li><a href="#featured" class="footer__link">Featured</a></li>
-                <li><a href="#women" class="footer__link">Women</a></li>
-                <li><a href="#new" class="footer__link">New</a></li>
-            </ul>
+          <h3 class="footer__title">Discover</h3>
+          <ul>
+            <li><a href="#home" class="footer__link">Home</a></li>
+            <li><a href="#featured" class="footer__link">T-Shirts</a></li>
+            <li><a href="#women" class="footer__link">Hats</a></li>
+            <li><a href="#new" class="footer__link">New</a></li>
+          </ul>
         </div>
 
         <div class="footer__box">
-            <h3 class="footer__title">Support</h3>
-            <ul>
-                <li><a href="#home" class="footer__link">Product Help</a></li>
-                <li><a href="#featured" class="footer__link">Customer Care</a></li>
-                <li><a href="#women" class="footer__link">Authorized Service</a></li>
-            </ul>
+          <h3 class="footer__title">Support</h3>
+          <ul>
+            <li><a href="#home" class="footer__link">Product Help</a></li>
+            <li><a href="#featured" class="footer__link">Customer Care</a></li>
+            <li>
+              <a href="#women" class="footer__link">Authorized Service</a>
+            </li>
+          </ul>
         </div>
 
         <div class="footer__box">
-            <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-            <a href="#" class="footer__social"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" class="footer__social"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="footer__social"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="footer__social"><i class="bx bxl-linkedin"></i></a>
         </div>
+      </div>
 
-    </div>
-
-    <p class="footer__copy">&#169; 2021 Benwits. All Rights Reserved</p>
-</footer>
+      <p class="footer__copy">&#169; 2021 Benwits. All Rights Reserved</p>
+    </footer>
 
     <!-- Scroll reveal JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-<!-- === Main Js === -->
-<script src="assets/js/main.js"></script>
-</body>
+    <!-- === Main Js === -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
